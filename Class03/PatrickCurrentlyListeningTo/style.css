@@ -13,6 +13,7 @@ body {
     margin: 1rem;
     font-family: sans-serif;
     line-height: 1.5;
+    text-align: center;
 }
 
 /* images and videos max out at full width */
@@ -24,16 +25,21 @@ video {
 img {
     width: 250px;
     display: block;
-    /* aspect-ratio: 1/1; */
+    aspect-ratio: 1/1;
+    margin-bottom: 1em;
+    transition: 0.3s ease-in-out;
+}
+img:hover {
+    transform: scale(1.1);
 }
 
 ul {
     list-style: none;
     padding-left: 0;
-    /* display: grid;
-    grid-template-columns: 250px 250px 250px; */
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
 }
 
 li {
-    /* padding: 1em; */
+    padding: 1em;
 }
