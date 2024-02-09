@@ -48,7 +48,13 @@ video {
   }
 }
 
+@media (max-width: 400px) {
+	.target-content {
+    background-color: #FFCC00;
+  }
+}
 
+/* You can also track against window height */
 /* @media (min-height: 768px) {
 	.target-content {
     background-color: #EEEEFF;

@@ -53,9 +53,10 @@ video {
   
 /*   NOTE: fixed positioning removes the item from document flow */
 /*   positioning is relative to the viewport */
-/*   position: fixed; */
+  /* position: fixed; */
   
 /*   NOTE: sticky positioning is new! the item is positioned normally */
 /*   positioning is relative to the viewport */
-/*   position: sticky; */
+  /* position: sticky;
+  top: 20px; */
 }

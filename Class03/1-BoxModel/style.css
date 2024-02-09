@@ -57,12 +57,11 @@ html {
   .box2 {
     border-color: #00FF00;
     
-  /*   margins collapse to the smallest value */
-  /*   margin-top: 20px;  */
-  /*   margin-top: -20px; */
+  /*   You can use negative values */
+  /* margin-top: -20px; */
     
   /*   overflow can clip your content */
-  /*   overflow: hidden;
+    /* overflow: hidden;
     max-height: 50px;
     max-width: 50px; */
   }
