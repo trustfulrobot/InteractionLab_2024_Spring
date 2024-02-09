@@ -1,0 +1,61 @@
+/* a minimalist set of CSS resets */
+
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+  margin: 1rem;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+/* images and videos max out at full width */
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+
+.box-model {
+  display: block;
+  min-height: 300px;  
+  background-color: #EEEEEE;
+  padding: 20px;
+  margin: 30px;
+  border-width: 2px;
+  border-style: solid;
+  
+  position: relative;
+  z-index: 5;
+}
+
+.target-content {
+  background-color: #FFEEEE;
+  /* top: -150px; */
+  
+  
+/*   NOTE: relative positioning doesn't remove item from document flow */
+/*   the page still reserves space for it */
+  position: relative;
+  
+/*   NOTE: absolute positioning removes the item from document flow */
+/*   the page does not reserve space for it */
+  /* position: absolute; */
+  
+/*   NOTE: fixed positioning removes the item from document flow */
+/*   positioning is relative to the viewport */
+/*   position: fixed; */
+  
+/*   NOTE: sticky positioning is new! the item is positioned normally */
+/*   positioning is relative to the viewport */
+/*   position: sticky; */
+}

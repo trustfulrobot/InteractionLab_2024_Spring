@@ -1,0 +1,68 @@
+/* a minimalist set of CSS resets */
+
+/* default to border-box */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  /* adjust typography defaults */
+  body {
+    margin: 1rem;
+    font-family: sans-serif;
+    line-height: 1.5;
+  }
+  
+  /* images and videos max out at full width */
+  img,
+  video {
+    height: auto;
+    max-width: 100%;
+  }
+  
+  
+  .box-model {
+    display: block;
+    
+    padding: 0px;
+    margin: 0px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 0;
+    
+    /* padding: 10px 30px; */
+  /*   padding: 10px 10px 10px 10px; */
+    
+  /*   margin: 10px 30px; */
+  /*   margin: 10px 10px 10px 10px; */
+    
+  /*   padding-top: 20px; */
+  /*   padding-right: 20px; */
+  /*   padding-bottom: 20px; */
+  /*   padding-right: 20px; */
+    
+  /*   margin-top: 20px; */
+  /*   margin-right: 20px; */
+  /*   margin-bottom: 20px; */
+  /*   margin-right: 20px; */
+  }
+  
+  .box1 {
+    border-color: #FF0000;
+  }
+  .box2 {
+    border-color: #00FF00;
+    
+  /*   margins collapse to the smallest value */
+  /*   margin-top: 20px;  */
+  /*   margin-top: -20px; */
+    
+  /*   overflow can clip your content */
+  /*   overflow: hidden;
+    max-height: 50px;
+    max-width: 50px; */
+  }
