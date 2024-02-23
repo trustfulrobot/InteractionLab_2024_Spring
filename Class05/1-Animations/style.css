@@ -1,0 +1,87 @@
+/* a minimalist set of CSS resets */
+
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+  margin: 1rem;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+/* images and videos max out at full width */
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+
+
+
+.hoverme {
+  margin-bottom: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background-color: #FFEEEE;
+  transition-duration: 750ms;
+  transition-property: background-color, width, height, scale, transform;
+  transition-timing-function: ease;
+/*   transition: all 750ms ease-in-out; */
+/*   transition: width 750ms ease-in-out; */
+}
+.hoverme:hover {
+  width: 300px;
+  height: 500px;
+  background-color: #EEFF00;
+  transform: translateY(-50px) scale(1) rotate(30deg);
+}
+
+
+.animations-container {
+  border: 1px solid;
+  padding: 20px;
+}
+.animations-container div {
+  overflow:hidden;
+  padding: 40px 20px;
+  width: 50%;
+  background-color: #FF0000;
+  margin-bottom: 20px;
+  
+  animation-duration: 1000ms;
+  animation-name: anim-demo;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transition-property: width;
+}
+
+.easing1 {
+  animation-timing-function: cubic-bezier(0.11, 0, 0.5, 0);
+}
+.easing2 {
+  animation-timing-function: cubic-bezier(0.5, 1, 0.89, 1);
+}
+.easing3 {
+  animation-timing-function: cubic-bezier(0.45, 0, 0.55, 1);
+}
+
+@keyframes anim-demo {
+  from {
+    width: 50%;
+  }
+  to {
+    width: 100%;
+  }
+}
