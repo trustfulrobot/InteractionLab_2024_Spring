@@ -1,0 +1,97 @@
+/* a minimalist set of CSS resets */
+
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+  margin: 1rem;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+/* images and videos max out at full width */
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+/* YOUR CSS GOES AFTER THIS */
+
+.buttons {
+  width: 100%;
+  background-color: #999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.buttons button {
+  margin: 0 1rem;
+}
+
+#blocks_container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: 1rem;
+  margin: 1rem;
+}
+
+.block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  color: #999999;
+  background-color: #EFEFEF;
+/*   background-image: url('https://placekitten.com/480/480'); */
+  background-size: cover;
+  background-position: center center;
+  transform: scale(1);
+  transition: transform 200ms cubic-bezier(0, 0.55, 0.45, 1);
+}
+
+.block:hover {
+  transform: scale(1.025);
+}
+
+
+/* MEDIA QUERIES */
+
+
+@media all and (min-width: 768px) {
+/* Medium devices (landscape tablets, 768px and up) */
+  
+  .container {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  
+}
+
+@media all and (min-width: 992px) {
+/* Large devices (laptops/desktops, 992px and up) */
+  
+  .container {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  
+}
+
+@media all and (min-width: 1200px) {
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+  
+  .container {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+  
+}
