@@ -17,12 +17,12 @@ function removeBlocks() {
 createBlocksBtn.addEventListener("click", createBlocks);
 removeBlocksBtn.addEventListener("click", removeBlocks);
 
-const foregound_colors = [
+const foreground_colors = [
   "blue",
   "red",
   "green"
 ]
-const backgound_colors = [
+const background_colors = [
   "yellow",
   "orange",
   "brown"
