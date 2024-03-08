@@ -2,6 +2,17 @@ const containerEl = document.querySelector("#blocks_container");
 const createBlocksBtn = document.querySelector("#create_blocks_btn");
 const removeBlocksBtn = document.querySelector("#remove_blocks_btn");
 
+const foreground_colors = [
+  "blue",
+  "red",
+  "green"
+];
+const background_colors = [
+  "yellow",
+  "orange",
+  "brown"
+];
+
 console.log(containerEl)
 
 function createBlocks() {
@@ -17,17 +28,7 @@ function removeBlocks() {
 createBlocksBtn.addEventListener("click", createBlocks);
 removeBlocksBtn.addEventListener("click", removeBlocks);
 
-const foreground_colors = [
-  "blue",
-  "red",
-  "green"
-]
-const background_colors = [
-  "yellow",
-  "orange",
-  "brown"
-]
 
-for(let i = 0; i < foregound_colors.length; i++) {
-  console.log("color: ", foregound_colors[i]);
+for(let i = 0; i < foreground_colors.length; i++) {
+  console.log("color: ", foreground_colors[i]);
 }
