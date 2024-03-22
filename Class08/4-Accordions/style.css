@@ -1,0 +1,72 @@
+/* a minimalist set of CSS resets */
+
+/* default to border-box */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  /* adjust typography defaults */
+  body {
+    margin: 1rem;
+    font-family: sans-serif;
+    line-height: 1.5;
+  }
+  
+  /* images and videos max out at full width */
+  img,
+  video {
+    height: auto;
+    max-width: 100%;
+  }
+  
+  /* YOUR CSS GOES AFTER THIS */
+  
+  
+  .accordion {
+    list-style: none;
+    padding: 0;
+  }
+  .faq {
+    border: 1px solid #555555;
+  }
+  .faq-question {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    display: block;
+    padding-right: 2rem;
+    position: relative;
+    padding: 1rem;
+    background-color: #666666;
+    color: #FFFFFF;  
+    transition: 300ms ease-in-out background-color;
+  }
+  .faq-question::after {
+    content: ">";
+    transform: rotate(90deg);
+    transition: 300ms ease-in-out transform;
+    position: absolute;
+    right: 1rem;
+  }
+  .faq-question:hover {
+    cursor: pointer;
+    background-color: #777777;
+  }
+  .faq-answer {
+    background-color: #EEEEEE;
+    display: block;
+    overflow: hidden;
+    transition: 300ms ease-in-out height;
+    height: auto;
+  }
+  .faq-answer .content {
+    padding: 1rem;
+  }
+  .faq.opened .faq-question::after {
+    transform: rotate(-90deg);
+  }
