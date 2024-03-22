@@ -39,3 +39,6 @@ video {
 #countries li:nth-child(4n-1) {
     border: 2px solid blue;
 }
+#countries li:nth-child(odd) {
+    font-style: italic;
+}
