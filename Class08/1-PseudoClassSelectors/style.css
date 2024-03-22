@@ -27,9 +27,11 @@ video {
 
 #countries li:first-child {
     border: 2px solid red;
+    font-weight: bold;
 }
 #countries li:last-child {
     border: 2px solid green;
+    font-weight: bold;
 }
 #countries li:nth-child(4n) {
     border: 2px solid orange;
