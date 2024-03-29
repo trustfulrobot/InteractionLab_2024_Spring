@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>Background Color Changer</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- this is the start of content -->
+    <h1>
+      Background Color Changer
+    </h1>
+    
+    <h2>
+      Current background color:<br />
+      <span id="color-text">#FF0000</span>
+    </h2>
+    
+    <form id="color-form">
+      <label for="colors">Background color: </label>
+      <input type="color" id="colors" value="#FF0000">
+      <input type="submit" value="Change background color">
+    </form>
+    <span id="errors"></span>
+    
+    <div id="color-container"></div>
+  </body>
+</html>

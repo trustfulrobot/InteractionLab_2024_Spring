@@ -1,0 +1,104 @@
+/* a minimalist set of CSS resets */
+
+/* default to border-box */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  /* adjust typography defaults */
+  body {
+    margin: 1rem;
+    font-family: sans-serif;
+    line-height: 1.5;
+  }
+  
+  /* images and videos max out at full width */
+  img,
+  video {
+    height: auto;
+    max-width: 100%;
+  }
+  
+  /* YOUR CSS GOES AFTER THIS */
+
+  :root {
+    --grey: #888888;
+    --dk_grey: #222222;
+    --lt_grey:#555555;
+    --red: #D27978;
+    --dk_red: #992B29;
+    --lt_red: #C93936;
+    --green: #4DFF79;
+    --dk_green: #26803D;
+    --lt_green: #00FF40;
+    --blue: #8AB7FF;
+    --dk_blue: #1F4480;
+    --lt_blue: #3E87FF;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+
+  .dataset {
+    --scale: 1;
+    --margin: 2em;
+    margin: var(--margin);
+    width: calc(100% * var(--scale) - (2 * var(--margin)));
+    aspect-ratio: 1 / 1;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 300ms ease-out, background-color 500ms ease-out;
+    border: 4px solid;
+    background-color: var(--grey);
+    border-color: var(--dk_grey);
+    color: #FFFFFF;
+    font-weight: bold;
+  }
+  .dataset:hover {
+    transform: scale(1.075);
+    background-color: var(--lt_grey);
+  }
+
+  .theme_green {
+    background-color: var(--green);
+    border-color: var(--dk_green);
+  }
+  .theme_green:hover {
+    background-color: var(--lt_green);
+  }
+
+
+  .theme_blue {
+    background-color: var(--blue);
+    border-color: var(--dk_blue);
+  }
+  .theme_blue:hover {
+    background-color: var(--lt_blue);
+  }
+
+  .theme_red {
+    background-color: var(--red);
+    border-color: var(--dk_red);
+  }
+  .theme_red:hover {
+    background-color: var(--lt_red);
+  }
+
+
+
+  @media all and (min-width: 768px) {
+    ul {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    }
+  }

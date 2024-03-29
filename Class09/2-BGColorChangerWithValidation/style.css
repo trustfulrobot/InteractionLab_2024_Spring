@@ -1,0 +1,52 @@
+/* a minimalist set of CSS resets */
+
+/* default to border-box */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  /* adjust typography defaults */
+  body {
+    margin: 1rem;
+    font-family: sans-serif;
+    line-height: 1.5;
+  }
+  
+  /* images and videos max out at full width */
+  img,
+  video {
+    height: auto;
+    max-width: 100%;
+  }
+  
+  /* YOUR CSS GOES AFTER THIS */
+  
+  #color-form {
+    margin-bottom: 1em;
+  }
+  #color-form input,
+  #color-form select {
+    padding: 0.25em;
+    margin: 0.25em;
+  }
+  #color-form input[type="submit"] {
+    display: block;
+  }
+  #color-container {
+    background-color: #FF0000;
+    border: 2px solid #EEEEEE;
+    display: block;
+    width: 100%;
+    height: 50vh;
+  }
+  #errors {
+    padding: 1em 0;
+    margin: 1em 0;
+    color: #FF0000;
+    font-weight: bold;
+  }
