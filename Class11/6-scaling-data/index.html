@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>Scaling NYC Open Data</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- this is the start of content -->
+    <h1>
+      Scaling NYC Open Data
+    </h1>
+    <div id="controller">
+        <div class="buttons">
+            <button id="sort-asc" disabled>Sort Ascending</button>
+            <button id="sort-desc" disabled>Sort Descending</button>
+        </div>
+        <div class="dates">
+            <label for="date-start">Start Date:</label>
+            <input type="range" min="0" max="99" value="1" class="slider" id="date-start" disabled>
+            <label for="date-start">End Date:</label>
+            <input type="range" min="1" max="100" value="100" class="slider" id="date-end" disabled>
+        </div>
+    </div>
+    <div id="errors"></div>
+    <div id="parties"></div>
+    
+  </body>
+</html>
